@@ -1,0 +1,52 @@
+header {
+  background: #d3221c;
+  display: flex;
+  grid-template-columns: 3fr 9fr;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  width: 150px;
+  padding: 5px 20px;
+}
+
+.main-menu
+  ul {
+    display: flex;
+    list-style: none;
+  }
+    li {
+      text-transform: uppercase;
+      margin-right: 30px;
+    }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
+
+.search-area {
+  padding-top: 130px;
+  padding-bottom: 170px;
+  background-image: url(../images/section-bg3-dark.jpg);
+}
+  h2 {
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+.parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  grid-column: 1/ span 12;
+  margin-top: 53px;
+}

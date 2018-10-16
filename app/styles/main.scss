@@ -1,0 +1,62 @@
+$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+// @import "bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "vars.scss";
+@import "../../node_modules/aos/dist/aos.css";
+@import "../fonts/_fonts.scss";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+}
+
+main {
+    grid-column: 3/ span 8;
+}
+
+.section {
+    margin-top: 40px;
+    .section-head,
+    .section-head__text {
+        text-align: center;
+    }
+    .section-head__text {
+        margin-bottom: 40px;
+        background-color: #23282c;
+        padding: 30px;
+        color: $color-white;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.9;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+.divider {
+    display: block;
+    margin: 30px auto 0;
+}
+
+@import 'modules/_header';
+@import 'modules/_welcome';
+@import 'modules/_food-menu';
+.sample-intro {
+    padding-top: 60px;
+    font-family: 'Helvetica Neue', Helvetica;
+    text-align: center;
+    h1,
+    h2,
+    p {
+        color: rgb(246, 117, 50);
+    }
+    a {
+        border-bottom-color: #f7854a;
+    }
+}
