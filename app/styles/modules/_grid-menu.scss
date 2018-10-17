@@ -384,14 +384,16 @@ main {
 }
 
 .js .grid {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .grid__item {
-    width: 260px;
+    width: calc(33% - 20px);
     position: relative;
     padding: 2.75rem;
-    margin-bottom: 5rem;
+    margin: 0 0.6rem 1rem;
 }
 
 .grid__item-wrap {
