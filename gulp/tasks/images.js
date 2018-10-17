@@ -2,7 +2,6 @@
 
 var gulp = require('gulp-help')(require('gulp'));
 var imagemin = require('gulp-imagemin');
-var mozjpeg = require('imagemin-mozjpeg');
 var cache = require('gulp-cache');
 var gulpif = require('gulp-if');
 
@@ -27,15 +26,4 @@ gulp.task('images', 'Run Imagemin optimalizations and copy to `dist/`', ['copySv
     return gulp.src(config.images.src)
         .pipe(gulpif(config.optimizeImages, cache(imagemin(config.images.cfg))))
         .pipe(gulp.dest(config.images.dest));
-});
-
-// Работа с Img
-gulp.task('img:build', function() {
-    return gulp.src('app/images/**/**/*.{jpg, png, webp, gif}')
-        .pipe(cache(imagemin([
-            mozjpeg({
-                quality: 80
-            })
-        ])))
-        .pipe(gulp.dest('dist/images/'));
 });

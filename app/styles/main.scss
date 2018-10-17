@@ -27,6 +27,12 @@ main {
     }
     .section-head__text {
         margin-bottom: 40px;
+        background-color: #23282c;
+        padding: 30px;
+        color: $color-white;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.9;
     }
 }
 
@@ -34,9 +40,14 @@ main {
     text-align: center;
 }
 
-@import 'modules/_header';
-@import 'modules/_welcome';
-@import 'modules/_food-menu';
+.divider {
+    display: block;
+    margin: 30px auto 0;
+}
+
+@import 'modules/_header.scss';
+@import 'modules/_welcome.scss';
+@import 'modules/_food-menu.scss';
 .sample-intro {
     padding-top: 60px;
     font-family: 'Helvetica Neue', Helvetica;
