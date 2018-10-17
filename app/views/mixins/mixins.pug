@@ -1,6 +1,7 @@
 mixin food-menu(src, alt, title, link)
-    a.food-menu__item(href="#")
-        .food-menu__img
-            img(src= src alt= alt).img-responsive.img-center.menu-img/
-        h3.food-menu__title= title
+    a.grid__item(href="#")
+        .grid__item-bg
+        .grid__item-wrap
+            img(src= src alt= alt).grid__item-img/
+        h3.grid__item-title= title
             //- a(href= link).btn.btn-secondary.text-bold.text-uppercase.animation.food-menu__more Докладніше

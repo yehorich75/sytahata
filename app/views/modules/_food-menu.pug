@@ -1,40 +1,41 @@
-.food-menu__items.section
+.grid-wrap.section
     h1.section-head Меню
     p.section-head__text Гастрономічні пропозиції ресторану - це варіації на тему старовинної української кухні та сучасних європейських тенденцій. Широкий вибір мяса та риби, приготованих за традиційними українськими рецептами. Не кажучи про перші страви, вареники, галушки, сало, соління...
         br
         | Саме тому у нас по-українському смачно та по-французьки вишукано.
+    .grid
 
-    include ../mixins/mixins
+        include ../mixins/mixins
 
-    +food-menu(
-        'images/menu/business-lunch-1.jpg',
-        'Бізнес-ланч',
-        'Бізнес-ланч',
-        'menu-pages/lunch.html'
-    )
-    +food-menu(
-        'images/menu/menu-specialty.jpg',
-        'Фірмові страви',
-        'Фірмові страви',
-        'menu-pages/specialty.html'
-    )
-    +food-menu(
-        'images/menu/menu-banquet.jpg',
-        'Банкетні родзинки',
-        'Банкетні родзинки',
-        'menu-pages/banquet.html'
-    )
-    +food-menu(
-        'images/menu/menu-soup.jpg',
-        'Перші страви',
-        'Перші страви',
-        'menu-pages/soup.html'
-    )
-    +food-menu(
-        'images/menu/dessert.jpg',
-        'Кондвироби та десерти',
-        'Кондвироби та десерти',
-        'menu-pages/dessert.html'
-    )
+        +food-menu(
+            'images/menu/business-lunch-1.jpg',
+            'Бізнес-ланч',
+            'Бізнес-ланч',
+            'menu-pages/lunch.html'
+        )
+        +food-menu(
+            'images/menu/menu-specialty.jpg',
+            'Фірмові страви',
+            'Фірмові страви',
+            'menu-pages/specialty.html'
+        )
+        +food-menu(
+            'images/menu/menu-banquet.jpg',
+            'Банкетні родзинки',
+            'Банкетні родзинки',
+            'menu-pages/banquet.html'
+        )
+        +food-menu(
+            'images/menu/menu-soup.jpg',
+            'Перші страви',
+            'Перші страви',
+            'menu-pages/soup.html'
+        )
+        +food-menu(
+            'images/menu/dessert.jpg',
+            'Кондвироби та десерти',
+            'Кондвироби та десерти',
+            'menu-pages/dessert.html'
+        )
 
-img.divider(src="images/divider-up.svg" alt="divider-up.svg")
+    img.divider(src="images/divider-up.svg" alt="divider-up.svg")
