@@ -1,0 +1,18 @@
+.welcome {
+    display: flex;
+    &__text {
+        padding: 20px 60px;
+        border: 1px solid $color-red;
+        margin-right: 30px;
+        p {
+            line-height: 1.5;
+        }
+    }
+}
+
+h1.text-light {
+    font-family: "OpenSans-Light", Arial, sans-serif;
+    color: $color-red;
+    font-size: 36px;
+    font-weight: 300;
+}

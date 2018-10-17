@@ -1,0 +1,15 @@
+{
+  "generator-lb": {
+    "version": "4.0.1",
+    "name": "sytahata",
+    "features": [
+      "includeFEFramework",
+      "includeModernizr",
+      "includejQuery"
+    ],
+    "jQuery": "includejQuery3",
+    "feFramework": "includeBootstrap",
+    "multiLanguage": true,
+    "dataFormat": "json"
+  }
+}

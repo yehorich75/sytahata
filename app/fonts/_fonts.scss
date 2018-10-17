@@ -1,0 +1,21 @@
+// @font-face {
+//     font-family: "OpenSans-Regular";
+//     src: url("fonts/opensans_regular/OpenSans-Regular.eot?") format("eot"),
+//          url("fonts/opensans_regular/OpenSans-Regular.woff2") format("woff2"),
+//          url("fonts/opensans_regular/OpenSans-Regular.woff") format("woff"),
+//          url("fonts/opensans_regular/OpenSans-Regular.ttf") format("truetype"),
+//          url("fonts/opensans_regular/OpenSans-Regular.svg") format("svg");
+// }
+
+// @font-face {
+//     font-family: "OpenSans-Light";
+//     src: url("fonts/opensans_light/OpenSans-Light.eot?") format("eot"),
+//          url("fonts/opensans_light/OpenSans-Light.woff2") format("woff2"),
+//          url("fonts/opensans_light/OpenSans-Light.woff") format("woff"),
+//          url("fonts/opensans_light/OpenSans-Light.ttf") format("truetype"),
+//          url("fonts/opensans_light/OpenSans-Light.svg") format("svg");
+// }
+
+@import "../styles/mixins/font-face";
+
+@include font-face("Open Sans", fonts/OpenSans/OpenSans);
