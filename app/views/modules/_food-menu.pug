@@ -11,43 +11,41 @@
             'images/menu/business-lunch-1.jpg',
             'Бізнес-ланч',
             'Бізнес-ланч',
-            'menu-pages/lunch.html'
+            '01'
         )
         +food-menu(
             'images/menu/menu-specialty.jpg',
             'Фірмові страви',
             'Фірмові страви',
-            'menu-pages/specialty.html'
+            '02'
         )
         +food-menu(
             'images/menu/menu-banquet.jpg',
             'Банкетні родзинки',
             'Банкетні родзинки',
-            'menu-pages/banquet.html'
+            '03'
         )
         +food-menu(
             'images/menu/menu-soup.jpg',
             'Перші страви',
             'Перші страви',
-            'menu-pages/soup.html'
+            '04'
         )
         +food-menu(
             'images/menu/dessert.jpg',
             'Кондвироби та десерти',
             'Кондвироби та десерти',
-            'menu-pages/dessert.html'
+            '05'
         )
 
     img.divider(src="images/divider-up.svg" alt="divider-up.svg")
 
-+food-menu__content
-.content
-    .content__item
-        .content__item-intro
-            img.content__item-img(src="images/1.jpg" alt="Some image")
-            h2.content__item-title Tour of my life
-        h3.content__item-subtitle
-        .content__item-text
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, laudantium.
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, laudantium.
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, laudantium.
++food-menu__content(
+    'images/food-menu__images/1.jpg',
+    'Alter Title',
+    'Банкет',
+    'Банкет',
+    'lorem ipsum',
+    'lorem ipsum',
+    'lorem ipsum'
+)

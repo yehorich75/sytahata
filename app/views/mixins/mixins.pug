@@ -1,9 +1,10 @@
-mixin food-menu(src, alt, title, link)
+mixin food-menu(src, alt, title, number)
     a.grid__item(href="#")
         .grid__item-bg
         .grid__item-wrap
-            img(src= src alt= alt).grid__item-img/
+            img(src= src alt= alt).grid__item-img
         h3.grid__item-title= title
+        h4.grid__item-number= number
             //- a(href= link).btn.btn-secondary.text-bold.text-uppercase.animation.food-menu__more Докладніше
 mixin food-menu__content(src, alt, title, subtitle, p1, p2, p3)
     .content
@@ -13,6 +14,6 @@ mixin food-menu__content(src, alt, title, subtitle, p1, p2, p3)
                 h2.content__item-title= title
             h3.content__item-subtitle= subtitle
             .content__item-text
-                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, laudantium.
-                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, laudantium.
-                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, laudantium.
+                p= p1
+                p= p2
+                p= p3
