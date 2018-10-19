@@ -1,12 +1,12 @@
 header {
     background: #d3221c;
     display: flex;
-    grid-template-columns: 3fr 9fr;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1;
+    grid-column: 1/ span 12;
 }
 
 .logo {
@@ -49,6 +49,6 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    grid-column: 1/ span 12;
     margin-top: 53px;
+    grid-column: 1/ span 12;
 }

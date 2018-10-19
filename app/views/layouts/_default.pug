@@ -20,16 +20,19 @@ head
   script(src="/scripts/plugins/modernizr.js")
 
 body
-  .wrapper
-
-    include ../modules/_header
-
-    main
-      block content
+  main
+    block content
+    .frame
+      include ../modules/_header
       include ../modules/_welcome
-      include ../modules/_food-menu
+    include ../modules/_food-menu
+    include ../modules/_content-menu
 
-    include ../modules/_footer
+  include ../modules/_footer
+
+
+
+
 
   //- script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
   script(src="/scripts/plugins/imagesloaded.pkgd.min.js")

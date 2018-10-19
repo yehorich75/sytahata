@@ -1,5 +1,6 @@
 .welcome {
     display: flex;
+    grid-column: 3/ span 8;
     &__text {
         padding: 20px 60px;
         border: 1px solid $color-red;
