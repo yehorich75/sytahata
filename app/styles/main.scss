@@ -9,14 +9,8 @@ body {
     font-family: "OpenSans-Regular", Arial, sans-serif;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: auto;
-}
-
 main {
-    grid-column: 3/ span 8;
+    // grid-column: 3/ span 8;
 }
 
 .section {

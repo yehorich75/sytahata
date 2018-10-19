@@ -580,10 +580,9 @@ main {
 @media screen and (min-width: 55em) {
     .frame {
         display: grid;
-        align-items: start;
-        justify-items: start;
-        grid-template-columns: 40% 60%;
-        grid-template-areas: 'title header';
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0;
+        padding: 0;
     }
     .codrops-header {
         grid-area: header;
