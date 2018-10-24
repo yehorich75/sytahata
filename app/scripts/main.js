@@ -22,3 +22,12 @@ import AOS from '../../node_modules/aos/src/js/aos';
 sayHello();
 
 AOS.init();
+
+function Scroll() {
+    var mainHeader = document.getElementById('header');
+    var ypos = window.pageYOffset;
+    if(ypos > 300) {
+        mainHeader.style.height = 40;
+    }
+  }
+  window.addEventListener("scroll",Scroll);

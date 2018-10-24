@@ -1,5 +1,5 @@
-mixin food-menu(src, alt, title, number)
-    a.grid__item(href="#")
+mixin food-menu(href, src, alt, title, number)
+    a.grid__item(href= href)
         .grid__item-bg
         .grid__item-wrap
             img(src= src alt= alt).grid__item-img
@@ -7,7 +7,7 @@ mixin food-menu(src, alt, title, number)
         h4.grid__item-number= number
             //- a(href= link).btn.btn-secondary.text-bold.text-uppercase.animation.food-menu__more Докладніше
 mixin food-menu__content(src, alt, title, subtitle, p1, p2, p3)
-    .content
+    .content#content
         .content__item
             .content__item-intro
                 img.content__item-img(src= src alt= alt)
