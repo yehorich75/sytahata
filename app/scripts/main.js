@@ -14,20 +14,22 @@ import {} from './external/jquery';
 // import {} from 'bootstrap-sass/assets/javascripts/bootstrap/popover';
 // Or import everything
 import {} from 'bootstrap-sass'; // eslint-disable-line import/imports-first
-import {
-    sayHello,
-} from './modules/utils';
-import AOS from '../../node_modules/aos/src/js/aos';
+// import {
+//     sayHello,
+// } from './modules/utils';
+// import AOS from '../../node_modules/aos/src/js/aos';
 
-sayHello();
+// sayHello();
 
-AOS.init();
+// AOS.init();
 
 function Scroll() {
-    var mainHeader = document.getElementById('header');
-    var ypos = window.pageYOffset;
-    if(ypos > 300) {
-        mainHeader.style.height = 40;
-    }
+  const topHeader = document.getElementById('header');
+  const ypos = window.pageYOffset;
+  if (ypos > 300) {
+    topHeader.classList.add('header-toggle');
+  } else {
+    topHeader.classList.remove('header-toggle');
   }
-  window.addEventListener("scroll",Scroll);
+}
+window.addEventListener('scroll', Scroll);

@@ -5,8 +5,14 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
+    height: 100px;
     z-index: 1;
     grid-column: 1/ span 12;
+    transition: all .2s;
+}
+
+.header-toggle {
+    height: 50px;
 }
 
 .logo {
@@ -17,19 +23,21 @@ header {
 .main-menu ul {
     display: flex;
     list-style: none;
+    li {
+        text-transform: uppercase;
+        margin-right: 30px;
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+    }
 }
 
-li {
-    text-transform: uppercase;
-    margin-right: 30px;
-}
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
+
+
 
 .search-area {
     padding-top: 130px;
