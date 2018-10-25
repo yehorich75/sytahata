@@ -1,18 +1,18 @@
-header {
+.header {
     background: #d3221c;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 70px;
     z-index: 1;
     grid-column: 1/ span 12;
     transition: all .2s;
 }
 
 .header-toggle {
-    height: 50px;
+    height: 40px;
 }
 
 .logo {
@@ -31,6 +31,9 @@ header {
             color: #ffffff;
             letter-spacing: 1px;
             font-size: 12px;
+            &:hover {
+                color: #b1b1b1;
+            }
         }
     }
 }
