@@ -1,47 +1,51 @@
 include ../mixins/mixins
 
-+food-menu__content(
-    'images/food-menu__images/1.jpg',
-    'Alter Title',
-    'Банкет',
-    'Банкет',
-    'lorem ipsum',
-    'lorem ipsum',
-    'lorem ipsum'
-)
-+food-menu__content(
-    'images/food-menu__images/2.jpg',
-    'Alter Title',
-    'Фірмові страви',
-    'Фірмові страви',
-    'lorem ipsum',
-    'lorem ipsum',
-    'lorem ipsum'
-)
-+food-menu__content(
-    'images/food-menu__images/3.jpg',
-    'Alter Title',
-    'Фірмові страви',
-    'Фірмові страви',
-    'lorem ipsum',
-    'lorem ipsum',
-    'lorem ipsum'
-)
-+food-menu__content(
-    'images/food-menu__images/4.jpg',
-    'Alter Title',
-    'Фірмові страви',
-    'Фірмові страви',
-    'lorem ipsum',
-    'lorem ipsum',
-    'lorem ipsum'
-)
-+food-menu__content(
-    'images/food-menu__images/5.jpg',
-    'Alter Title',
-    'Фірмові страви',
-    'Фірмові страви',
-    'lorem ipsum',
-    'lorem ipsum',
-    'lorem ipsum'
-)
+.content#content
+    +food-menu__content(
+        'images/food-menu__images/1.jpg',
+        'Alter Title',
+        'Банкет',
+        'Банкет',
+        'lorem ipsum',
+        'lorem ipsum',
+        'lorem ipsum'
+    )
+    +food-menu__content(
+        'images/food-menu__images/2.jpg',
+        'Alter Title',
+        'Фірмові страви',
+        'Фірмові страви',
+        'lorem ipsum',
+        'lorem ipsum',
+        'lorem ipsum'
+    )
+    +food-menu__content(
+        'images/food-menu__images/3.jpg',
+        'Alter Title',
+        'Фірмові страви',
+        'Фірмові страви',
+        'lorem ipsum',
+        'lorem ipsum',
+        'lorem ipsum'
+    )
+    +food-menu__content(
+        'images/food-menu__images/4.jpg',
+        'Alter Title',
+        'Фірмові страви',
+        'Фірмові страви',
+        'lorem ipsum',
+        'lorem ipsum',
+        'lorem ipsum'
+    )
+    +food-menu__content(
+        'images/food-menu__images/5.jpg',
+        'Alter Title',
+        'Фірмові страви',
+        'Фірмові страви',
+        'lorem ipsum',
+        'lorem ipsum',
+        'lorem ipsum'
+    )
+    button.content__close Close
+    svg.content__indicator.icon.icon--caret
+        use(xlink:href="#icon-caret")

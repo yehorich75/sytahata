@@ -1,49 +1,50 @@
 img.divider(src="images/divider-up.svg" alt="divider-up.svg")
 
 .section
-    h1.section-head Меню
-    p.section-head__text Гастрономічні пропозиції ресторану - це варіації на тему старовинної української кухні та сучасних європейських тенденцій. Широкий вибір мяса та риби, приготованих за традиційними українськими рецептами. Не кажучи про перші страви, вареники, галушки, сало, соління...
-        br
-        | Саме тому у нас по-українському смачно та по-французьки вишукано.
-    .grid-wrap
-        .grid
-            include ../mixins/mixins
+    .container
+        h1.section-head Меню
+        p.section-head__text Гастрономічні пропозиції ресторану - це варіації на тему старовинної української кухні та сучасних європейських тенденцій. Широкий вибір мяса та риби, приготованих за традиційними українськими рецептами. Не кажучи про перші страви, вареники, галушки, сало, соління...
+            br
+            | Саме тому у нас по-українському смачно та по-французьки вишукано.
+        .grid-wrap
+            .grid
+                include ../mixins/mixins
 
-            +food-menu(
-                '#content',
-                'images/menu/business-lunch-1.jpg',
-                'Бізнес-ланч',
-                'Бізнес-ланч',
-                '01'
-            )
-            +food-menu(
-                '#content',
-                'images/menu/menu-specialty.jpg',
-                'Фірмові страви',
-                'Фірмові страви',
-                '02'
-            )
-            +food-menu(
-                '#content',
-                'images/menu/menu-banquet.jpg',
-                'Банкетні родзинки',
-                'Банкетні родзинки',
-                '03'
-            )
-            +food-menu(
-                '#content',
-                'images/menu/menu-soup.jpg',
-                'Перші страви',
-                'Перші страви',
-                '04'
-            )
-            +food-menu(
-                '#content',
-                'images/menu/dessert.jpg',
-                'Кондвироби та десерти',
-                'Кондвироби та десерти',
-                '05'
-            )
+                +food-menu(
+                    '#content',
+                    'images/menu/business-lunch-1.jpg',
+                    'Бізнес-ланч',
+                    'Бізнес-ланч',
+                    '01'
+                )
+                +food-menu(
+                    '#content',
+                    'images/menu/menu-specialty.jpg',
+                    'Фірмові страви',
+                    'Фірмові страви',
+                    '02'
+                )
+                +food-menu(
+                    '#content',
+                    'images/menu/menu-banquet.jpg',
+                    'Банкетні родзинки',
+                    'Банкетні родзинки',
+                    '03'
+                )
+                +food-menu(
+                    '#content',
+                    'images/menu/menu-soup.jpg',
+                    'Перші страви',
+                    'Перші страви',
+                    '04'
+                )
+                +food-menu(
+                    '#content',
+                    'images/menu/dessert.jpg',
+                    'Кондвироби та десерти',
+                    'Кондвироби та десерти',
+                    '05'
+                )
 
 img.divider(src="images/divider-up.svg" alt="divider-up.svg")
 

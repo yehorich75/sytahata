@@ -33,3 +33,8 @@ function Scroll() {
   }
 }
 window.addEventListener('scroll', Scroll);
+
+const charming = require('charming');
+
+const gridItemTitle = document.querySelector('.grid__item-title');
+charming(gridItemTitle);
