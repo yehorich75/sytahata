@@ -92,6 +92,8 @@
             this.DOM.tilt.img = this.DOM.imgWrap.querySelector('img');
             // The title (vertical text).
             this.DOM.tilt.title = this.DOM.el.querySelector('.grid__item-title');
+            // charming(this.DOM.tilt.title);
+            // this.DOM.numberLetters = this.DOM.tilt.title.querySelectorAll('span');
             // The number (horizontal letter/number code).
             this.DOM.tilt.number = this.DOM.el.querySelector('.grid__item-number');
             // Split the number into spans using charming.js

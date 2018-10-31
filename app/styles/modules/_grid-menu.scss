@@ -208,14 +208,14 @@ table {
 }
 
 body {
-    --color-text: #4800d4;
+    --color-text: #757272;
     --color-bg: #e8e8e8;
     --color-link: #ec1752;
     --color-link-hover: #eb1851;
     --color-info: #272526;
     --grid-item-bg: #f1f1f1;
     --color-close: #ec1752;
-    font-family: Futura, "futura-pt", sans-serif;
+    // font-family: Futura, "futura-pt", sans-serif;
     min-height: 100vh;
     color: #57585c;
     color: var(--color-text);
@@ -288,7 +288,7 @@ a:focus {
     width: 1.5em;
     height: 1.5em;
     margin: 0 auto;
-    fill: currentColor;
+    fill: $color-red;
 }
 
 main {
@@ -432,10 +432,10 @@ main {
     left: 0;
     top: 0;
     margin: 0 0 0 1rem;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    transform-origin: 0 50%;
+    // -webkit-writing-mode: vertical-rl;
+    // writing-mode: vertical-rl;
+    // transform: rotate(180deg);
+    // transform-origin: 0 50%;
 }
 
 .grid__item-number {
@@ -449,6 +449,7 @@ main {
 
 .grid__item-number>span {
     display: inline-block;
+    color: $color-orange;
 }
 
 .content {
@@ -508,6 +509,7 @@ main {
 }
 
 .content__item-title {
+    color: $color-red;
     position: relative;
     font-size: 7vw;
     line-height: 1;
@@ -564,7 +566,7 @@ main {
 
 .content__indicator {
     position: absolute;
-    top: calc(100vh - 6rem);
+    top: calc(100vh - 1rem);
     left: calc(50% - 0.75rem);
     display: none;
 }

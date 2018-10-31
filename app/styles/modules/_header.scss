@@ -1,12 +1,18 @@
-header {
+.header {
     background: #d3221c;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
+    height: 70px;
     z-index: 1;
     grid-column: 1/ span 12;
+    transition: all .2s;
+}
+
+.header-toggle {
+    height: 40px;
 }
 
 .logo {
@@ -17,24 +23,30 @@ header {
 .main-menu ul {
     display: flex;
     list-style: none;
+    li {
+        text-transform: uppercase;
+        margin-right: 30px;
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-size: 12px;
+            &:hover {
+                color: #b1b1b1;
+            }
+        }
+    }
 }
 
-li {
-    text-transform: uppercase;
-    margin-right: 30px;
-}
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
+
+
 
 .search-area {
     padding-top: 130px;
     padding-bottom: 170px;
-    background-image: url(../images/section-bg3-dark.jpg);
+    background-image: url(../images/hero-img-borsch-2.jpg);
+    height: 100vh;
 }
 
 h2 {
