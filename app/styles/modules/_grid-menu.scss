@@ -407,6 +407,7 @@ main {
     width: 100%;
     height: 100%;
     background: var(--grid-item-bg);
+    border-radius: $border-radius;
 }
 
 .grid__item-img {
