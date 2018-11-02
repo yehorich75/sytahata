@@ -5,20 +5,25 @@
     "$": true,
     "jQuery": true,
     "Modernizr": true,
-    "window": true,
+    "window": true
   },
 
   "env": {
-    "browser": true,
+    "browser": true
   },
 
   "rules": {
     "no-param-reassign": 0,
+    "linebreak-style": 0
   },
 
   "parserOptions": {
-      "ecmaFeatures": {
-        experimentalObjectRestSpread: true,
-      }
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
     }
+  }
+  // "linebreak-style": [
+  //   "error", 
+  //   "windows"
+  // ]
 }

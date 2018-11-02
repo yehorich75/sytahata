@@ -24,13 +24,13 @@ import {} from 'bootstrap-sass'; // eslint-disable-line import/imports-first
 // AOS.init();
 
 function Scroll() {
-    const topHeader = document.getElementById('header');
-    const ypos = window.pageYOffset;
-    if (ypos > 300) {
-        topHeader.classList.add('header-toggle');
-    } else {
-        topHeader.classList.remove('header-toggle');
-    }
+  const topHeader = document.getElementById('header');
+  const ypos = window.pageYOffset;
+  if (ypos > 300) {
+    topHeader.classList.add('header-toggle');
+  } else {
+    topHeader.classList.remove('header-toggle');
+  }
 }
 window.addEventListener('scroll', Scroll);
 
