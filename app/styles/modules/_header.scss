@@ -1,5 +1,5 @@
 .header {
-    background: #d3221c;
+    // background: #d3221c;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,9 +30,9 @@
             text-decoration: none;
             color: #ffffff;
             letter-spacing: 1px;
-            font-size: 12px;
+            font-size: 18px;
             &:hover {
-                color: #b1b1b1;
+                color: $color-orange;
             }
         }
     }
