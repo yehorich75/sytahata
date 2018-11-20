@@ -26,7 +26,7 @@ import {} from 'bootstrap-sass'; // eslint-disable-line import/imports-first
 function Scroll() {
   const topHeader = document.getElementById('header');
   const ypos = window.pageYOffset;
-  if (ypos > 300) {
+  if (ypos > 150) {
     topHeader.classList.add('header-toggle');
   } else {
     topHeader.classList.remove('header-toggle');
